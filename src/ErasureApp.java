@@ -19,6 +19,7 @@ public class ErasureApp {
         Mydata<Integer> iMydata = (Mydata<Integer>) data; // ==> disini di konversi ke Integer dan tidak terjadi err
         Integer dataInt = iMydata.getData(); //==> sat kita simpan ke dalam variabel pun tidak err
         System.out.println(dataInt);
+        
     }
 
 
