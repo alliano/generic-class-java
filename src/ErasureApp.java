@@ -1,6 +1,6 @@
-import javax.print.DocFlavor.STRING;
+// import javax.print.DocFlavor.STRING;
 
-import classGeneric.Mydata;
+// import classGeneric.Mydata;
 
 /**
  * type erasure adalah proses pengecekan generic pada saat compile time (saat source code di compile)
@@ -16,12 +16,12 @@ public class ErasureApp {
          * tapi jikalau kita konversi datanya menjadi tipe data apapun itu tidak akan error saat 
          * kompilasi tapi saat kita runing maka akan terjadi error
          * ager langsung error saat menulis kode maka harus kita tentukan tipe type generic nya
-         */
-        Mydata data = new Mydata("mugen sukoyomi"); //==> ini tipe parameter nya string
-        System.out.println(data.getData());
-        Mydata<Integer> iMydata = (Mydata<Integer>) data; // ==> disini di konversi ke Integer dan tidak terjadi err
-        Integer dataInt = iMydata.getData(); //==> sat kita simpan ke dalam variabel pun tidak err
-        System.out.println(dataInt);
+        //  */
+        // Mydata data = new Mydata("mugen sukoyomi"); //==> ini tipe parameter nya string
+        // System.out.println(data.getData());
+        // Mydata<Integer> iMydata = (Mydata<Integer>) data; // ==> disini di konversi ke Integer dan tidak terjadi err
+        // Integer dataInt = iMydata.getData(); //==> sat kita simpan ke dalam variabel pun tidak err
+        // System.out.println(dataInt);
 
         //AGAR ERROR SAAT MENULIS KODE
         // Mydata<String> data2 = new Mydata<String>("abis ini belajar graphql apolo");
